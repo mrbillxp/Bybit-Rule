@@ -53,4 +53,4 @@ PROCESS-NAME,com.bybit.app
 PROCESS-NAME,com.bybit.global
 
 # Optional: You can also try USER-AGENT if PROCESS-NAME doesn't work
-# USER-AGENT,Bybit*
+USER-AGENT,Bybit*
