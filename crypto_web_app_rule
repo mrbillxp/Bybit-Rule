@@ -1,27 +1,38 @@
 # NAME: Bybit Optimized
 # AUTHOR: U0hZiY
-# UPDATED: 2025-09-04
+# UPDATED: 2025-09-05
+# DESC: Optimized Bybit rules with latest domains
 
-# Bybit related domains
-DOMAIN,api3.bybit.biz,Bybit
-DOMAIN,www.bybits.org,Bybit
-DOMAIN-SUFFIX,bybit.com,Bybit
-DOMAIN-SUFFIX,bybit.cloud,Bybit
-DOMAIN-SUFFIX,bybit.global,Bybit
-DOMAIN-SUFFIX,bybit.co.kr,Bybit
-DOMAIN-SUFFIX,bybit.com.br,Bybit
-DOMAIN-SUFFIX,bybitapi.com,Bybit
-DOMAIN-SUFFIX,bybit.net,Bybit
-DOMAIN-SUFFIX,bybit.biz,Bybit
-DOMAIN-SUFFIX,bybits.org,Bybit
-DOMAIN-SUFFIX,appsflyersdk.com,Bybit
-DOMAIN-SUFFIX,byapps.net,Bybit
-DOMAIN-SUFFIX,geetest.com,Bybit
+# Specific domains
+DOMAIN,monitor-frontend-collector.a.bybit-aws.com
+DOMAIN,api3.bybit.biz
+DOMAIN,www.bybits.org
 
-# User-Agent rules (more reliable than PROCESS-NAME in Surge)
-USER-AGENT,*Bybit*,Bybit
-USER-AGENT,Bybit*,Bybit
+# Main domain suffixes
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybit.biz
+DOMAIN-SUFFIX,bybdc6.com
+DOMAIN-SUFFIX,byabcde.com
+DOMAIN-SUFFIX,byapps.net
+DOMAIN-SUFFIX,byd3c3.com
 
-# Process rules (may not work on all platforms)
-PROCESS-NAME,com.bybit.app,Bybit
-PROCESS-NAME,com.bybit.global,Bybit
+# Additional Bybit related domains
+DOMAIN-SUFFIX,bybit.cloud
+DOMAIN-SUFFIX,bybit.global
+DOMAIN-SUFFIX,bybit.co.kr
+DOMAIN-SUFFIX,bybit.com.br
+DOMAIN-SUFFIX,bybitapi.com
+DOMAIN-SUFFIX,bybit.net
+DOMAIN-SUFFIX,bybits.org
+
+# Third-party services used by Bybit
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,geetest.com
+
+# User-Agent rules for mobile app
+USER-AGENT,*Bybit*
+USER-AGENT,Bybit*
+
+# Process rules for mobile app (backup)
+PROCESS-NAME,com.bybit.app
+PROCESS-NAME,com.bybit.global
