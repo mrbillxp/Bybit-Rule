@@ -1,1 +1,38 @@
+# NAME: Bybit Optimized
+# AUTHOR: U0hZiY
+# UPDATED: 2025-09-05
+# DESC: Optimized Bybit rules with latest domains
 
+# Specific domains
+host,monitor-frontend-collector.a.bybit-aws.com
+host,api3.bybit.biz
+host,www.bybits.org
+
+# Main host suffixes
+host-suffix, bybit.com
+host-suffix, bybit.biz
+host-suffix, bybdc6.com
+host-suffix, byabcde.com
+host-suffix, byapps.net
+host-suffix, byd3c3.com
+
+# Additional Bybit related domains
+host-suffix, bybit.cloud
+host-suffix, bybit.global
+host-suffix, bybit.co.kr
+host-suffix, bybit.com.br
+host-suffix, bybitapi.com
+host-suffix, bybit.net
+host-suffix, bybits.org
+
+# Third-party services used by Bybit
+host-suffix, appsflyersdk.com
+host-suffix, geetest.com
+
+# User-Agent rules for mobile app
+user-agent, *Bybit*
+user-agent, Bybit*
+
+# Process rules for mobile app (backup)
+PROCESS-NAME, com.bybit.app
+PROCESS-NAME, com.bybit.global
