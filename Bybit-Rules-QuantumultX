@@ -4,9 +4,9 @@
 # DESC: Optimized Bybit rules with latest domains
 
 # Specific domains
-host,monitor-frontend-collector.a.bybit-aws.com
-host,api3.bybit.biz
-host,www.bybits.org
+host, monitor-frontend-collector.a.bybit-aws.com
+host, api3.bybit.biz
+host, www.bybits.org
 
 # Main host suffixes
 host-suffix, bybit.com
